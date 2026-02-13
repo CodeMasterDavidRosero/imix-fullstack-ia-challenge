@@ -40,6 +40,19 @@ Copiar desde `.env.example`:
 - `PORT` (actual `3001`)
 - `CORS_ORIGINS`
 
+Crear archivo local `.env` (no versionado):
+
+```bash
+# Windows (PowerShell/cmd)
+copy .env.example .env
+
+# Mac/Linux
+cp .env.example .env
+```
+
+Luego editar `.env` y reemplazar `MONGODB_URI` con una cadena valida de MongoDB Atlas o local.
+El backend falla al iniciar si `MONGODB_URI` no existe.
+
 ## Troubleshooting rapido
 
 - Error `EADDRINUSE`:

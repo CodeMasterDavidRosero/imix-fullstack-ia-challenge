@@ -172,4 +172,18 @@ Usar `imix-backend/.env.example` como base:
 - `PORT`
 - `CORS_ORIGINS`
 
-No versionar secretos reales en Git.
+Crear el archivo local antes de arrancar backend:
+
+```bash
+cd imix-backend
+
+# Windows
+copy .env.example .env
+
+# Mac/Linux
+cp .env.example .env
+```
+
+Actualizar `MONGODB_URI` en `.env` con una URI valida.
+
+No versionar secretos reales en Git (`.env` esta ignorado).
